@@ -1,0 +1,12 @@
+This change log only focus on changes in the application of the python package.
+Consider the commit messages for changes on the code basis or additions to the
+package.
+
+Since 2017-01-03 (3ec99cdc4c247dc54bfddd30fa9469bea809852d):
+- getCellsAlongLine( Rs, phis, Zs, Grid ) is renamed to 
+  getCellIndex( points, Grid ). It can be easily transfered by defining points 
+  as zip( Rs, phis, Zs ).
+
+Since 2016-07-08 (b699d7539bcb94807ec14c2f2f597675311c8494):
+- Data from an object A of class PlasmaField previously accessed via 
+  A[ quantity ][1] need to be accessed via A( quantity ).
